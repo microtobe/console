@@ -234,7 +234,7 @@ class Error
                 $fragments   = [];
                 $tmp         = explode(' ', $value);
                 $fragments[] = array_shift($tmp);
-                $tmp1        = explode('): ', join($tmp, ' '));
+                $tmp1        = explode('): ', implode(' ', $tmp));
                 $tmp1[0]     .= ')';
                 if (count($tmp1) == 2) {
                     // IDE 可识别处理，只有放最后才可识别
